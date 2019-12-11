@@ -1,4 +1,8 @@
 $header-height: 4.5rem;
+$logo-width: 4rem;
+$button-bg: #ff8000;
+
+$path: "../img/";
 
 $breakpoints: (
   l: 960px
@@ -19,4 +23,10 @@ $breakpoints: (
   --h3-font-size: 1.5rem;
   --body-font-size: 1rem;
   --small-font-size: 0.8rem;
+}
+
+//PALETA DE COLORES
+:root {
+  --header-color: hsl(258, 100%, 100%);
+  --bg-red: hsl(360, 75%, 25%, 0.924);
 }
