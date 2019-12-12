@@ -1,7 +1,7 @@
 .banner {
   width: 100%;
-  height: 500px;
-  background: yellow;
+  height: 400px;
+  background: black;
   margin-top: $header-height;
   padding-bottom: 1em;
 
@@ -12,11 +12,15 @@
 
   position: relative;
 
+  @include from(xl) {
+    height: 500px;
+  }
+
   &__image {
     position: absolute;
     display: block;
     width: 100%;
-    height: 500px;
+    height: 80%;
   }
 
   &__button,
@@ -28,18 +32,17 @@
   &__button {
     align-self: flex-start;
     display: block;
-    width: 16em;
     background: $button-bg;
     color: #ffffff;
     text-transform: uppercase;
-    border-radius: 0.8em;
+    border-radius: 2em;
     font-size: var(--small-font-size);
 
-    line-height: 2.5;
+    line-height: 3em;
     padding: 0 1.5em;
 
-    margin-top: 33%;
-    margin-left: 15%;
+    margin-top: 10em;
+    margin-left: 8em;
 
     &:hover {
       background: darken($button-bg, 5);
@@ -48,10 +51,37 @@
     &:active {
       transform: scale(0.95);
     }
+
+    @include from(m) {
+      font-size: 0.7rem;
+      margin-top: 8.5em;
+      margin-left: 8.5em;
+    }
+
+    @include from(840px) {
+      margin-left: 13em;
+    }
+
+    @include from(lg) {
+      margin-left: 15em;
+    }
+
+    @include from(xl) {
+      font-size: 0.9em;
+      margin-top: 8em;
+      margin-left: 15em;
+    }
   }
 
   &__title {
     text-align: center;
     font-size: var(--h3-font-size);
+
+    @include from(lg) {
+      font-size: var(--h2-font-size);
+    }
+    @include from(xl) {
+      font-size: var(--h1-font-size);
+    }
   }
 }

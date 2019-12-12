@@ -5,7 +5,13 @@ $button-bg: #ff8000;
 $path: "../img/";
 
 $breakpoints: (
-  l: 960px
+  s: 0,
+  //todos los tamaños
+    m: 40em,
+  // 640px
+    lg: 64em,
+  // 1024px
+    xl: 75em //1200px
 );
 
 // Variables de apilamiento (Z-index)
@@ -22,7 +28,7 @@ $breakpoints: (
   --h2-font-size: 1.75rem;
   --h3-font-size: 1.5rem;
   --body-font-size: 1rem;
-  --small-font-size: 0.8rem;
+  --small-font-size: 0.6rem;
 }
 
 //PALETA DE COLORES
