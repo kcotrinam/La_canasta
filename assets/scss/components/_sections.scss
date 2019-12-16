@@ -1,0 +1,51 @@
+.lacanasta {
+  background: var(--blue-bg);
+  padding: 1.5em;
+  position: relative;
+  color: var(--text-color);
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: img("02.jpg") center/cover;
+    opacity: 0.3;
+  }
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    font-size: var(--h1-font-size);
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__subtitle {
+    font-size: var(--h2-font-size);
+    margin: 0;
+    padding: 0;
+  }
+
+  &__description {
+    width: 70%;
+    text-align: center;
+  }
+
+  &__nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    padding: 0.5em 0.5em;
+    background-color: brown;
+  }
+}

@@ -1,18 +1,18 @@
 .header {
   width: 100%;
   height: $header-height;
-  // background-color: var(--header-color);
+  background-color: var(--header-color);
   position: fixed;
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
   margin-top: 0;
+  padding: 0.9em 0;
 
   &__image {
     display: block;
     width: $logo-width;
 
     margin: 0 auto;
-    padding: 0.5rem 0;
   }
 }

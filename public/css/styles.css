@@ -13,8 +13,10 @@
   --small-font-size: 0.6rem; }
 
 :root {
-  --header-color: hsl(258, 100%, 100%);
-  --bg-red: hsl(360, 75%, 25%, 0.924); }
+  --header-color: hsl(50, 100%, 100%);
+  --text-color: hsl(100, 100%, 100%);
+  --red-bg: hsl(360, 75%, 10%);
+  --blue-bg: hsl(243, 100%, 10%); }
 
 *,
 *::before,
@@ -49,16 +51,17 @@ h2 {
 .header {
   width: 100%;
   height: 4.5rem;
+  background-color: var(--header-color);
   position: fixed;
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  margin-top: 0; }
+  margin-top: 0;
+  padding: 0.9em 0; }
   .header__image {
     display: block;
     width: 4rem;
-    margin: 0 auto;
-    padding: 0.5rem 0; }
+    margin: 0 auto; }
 
 .banner {
   width: 100%;
@@ -123,3 +126,50 @@ h2 {
     @media screen and (min-width: 75em) {
       .banner__title {
         font-size: var(--h1-font-size); } }
+
+.lacanasta {
+  background: var(--blue-bg);
+  padding: 1.5em;
+  position: relative;
+  color: var(--text-color); }
+  .lacanasta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../img/02.jpg") center/cover;
+    opacity: 0.3; }
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .card__title {
+    font-size: var(--h1-font-size);
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0; }
+  .card__subtitle {
+    font-size: var(--h2-font-size);
+    margin: 0;
+    padding: 0; }
+  .card__description {
+    width: 70%;
+    text-align: center; }
+  .card__nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0.5em 0.5em;
+    background-color: brown; }
+
+.button {
+  background: green;
+  margin: 0.5em 0.2em;
+  padding: 0.5em 0.5em;
+  border-radius: 0.7em;
+  text-align: center;
+  color: var(--text-color); }
