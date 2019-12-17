@@ -1,9 +1,31 @@
 .button {
-  background: green;
+  $first-button-color: hsl(0, 0, 45%);
+  $second-button-color: hsl(0, 0, 35%);
+  background-image: linear-gradient(
+    $first-button-color 50%,
+    $second-button-color 50%
+  );
+  border-top: 7px solid darken($first-button-color, 5);
+  border-bottom: 7px solid darken($second-button-color, 10);
+  border-left: 7px solid darken($first-button-color, 10);
+  border-right: 7px solid darken($second-button-color, 10);
+
   margin: 0.5em 0.2em;
-  padding: 0.5em 0.5em;
-  border-radius: 0.7em;
+  padding: 0.5em 0.9em;
+  border-radius: 0.3em;
 
   text-align: center;
   color: var(--text-color);
+
+  @include from(m) {
+    font-size: var(--m-font-size);
+  }
+
+  @include from(lg) {
+    padding: 0.7em 2.5em;
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
 }

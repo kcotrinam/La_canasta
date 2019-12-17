@@ -28,24 +28,52 @@
     text-transform: uppercase;
     margin: 0;
     padding: 0;
+
+    @include from(m) {
+      font-size: calc(var(--h1-font-size) * 1.5);
+    }
+
+    @include from(lg) {
+      font-size: calc(var(--h1-font-size) * 2);
+    }
   }
 
   &__subtitle {
     font-size: var(--h2-font-size);
     margin: 0;
     padding: 0;
+
+    @include from(m) {
+      font-size: calc(var(--h2-font-size) * 1.5);
+    }
+
+    @include from(lg) {
+      font-size: calc(var(--h2-font-size) * 2);
+    }
   }
 
   &__description {
     width: 70%;
     text-align: center;
+
+    @include from(m) {
+      font-size: var(--m-font-size);
+    }
+
+    @include from(lg) {
+      font-size: var(--l-font-size);
+    }
   }
 
   &__nav {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     padding: 0.5em 0.5em;
-    background-color: green;
+
+    @include from(l) {
+      width: 60%;
+    }
   }
 }
