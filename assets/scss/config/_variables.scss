@@ -2,6 +2,9 @@ $header-height: 4.5rem;
 $logo-width: 4rem;
 $button-bg: #ff8000;
 
+$blue-border-color: hsl(240, 50%, 30%);
+$red-border-color: hsl(0, 100%, 20%);
+
 $path: "../img/";
 
 $breakpoints: (
@@ -27,6 +30,7 @@ $breakpoints: (
   --h1-font-size: 2.5rem;
   --h2-font-size: 1.75rem;
   --h3-font-size: 1.5rem;
+  --h4-font-size: 1.2rem;
 
   --s-font-size: 1rem;
   --m-font-size: 1.35rem;

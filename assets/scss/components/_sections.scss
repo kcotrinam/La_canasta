@@ -1,9 +1,27 @@
-.lacanasta {
-  background: var(--blue-bg);
+.lacanasta,
+.escuela,
+.academia,
+.museo {
   padding: 1.5em;
   position: relative;
   color: var(--text-color);
+}
 
+.lacanasta,
+.academia {
+  background: var(--blue-bg);
+  border-top: 15px solid $blue-border-color;
+  border-bottom: 15px solid $blue-border-color;
+}
+
+.escuela,
+.museo {
+  background: var(--red-bg);
+  border-top: 15px solid $red-border-color;
+  border-bottom: 15px solid $red-border-color;
+}
+
+.lacanasta {
   &:before {
     content: "";
     position: absolute;
@@ -12,7 +30,46 @@
     width: 100%;
     height: 100%;
     background: img("02.jpg") center/cover;
-    opacity: 0.3;
+    opacity: 0.15;
+  }
+}
+
+.escuela {
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: img("03.jpg") center/cover;
+    opacity: 0.1;
+  }
+}
+
+.academia {
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: img("04.jpg") center/cover;
+    opacity: 0.1;
+  }
+}
+
+.museo {
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: img("05.jpg") center/cover;
+    opacity: 0.1;
   }
 }
 
@@ -39,9 +96,11 @@
   }
 
   &__subtitle {
-    font-size: var(--h2-font-size);
+    font-size: var(--h4-font-size);
     margin: 0;
     padding: 0;
+    letter-spacing: 0.6em;
+    font-style: italic;
 
     @include from(m) {
       font-size: calc(var(--h2-font-size) * 1.5);
@@ -55,6 +114,7 @@
   &__description {
     width: 70%;
     text-align: center;
+    padding: 0.8em;
 
     @include from(m) {
       font-size: var(--m-font-size);
