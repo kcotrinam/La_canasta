@@ -17,7 +17,7 @@
   --small-font-size-button: 0.6rem; }
 
 :root {
-  --header-color: hsl(50, 100%, 100%);
+  --header-color: hsl(50, 50%, 98%);
   --text-color: hsl(100, 100%, 100%);
   --red-bg: hsl(360, 75%, 10%);
   --blue-bg: hsl(243, 100%, 10%); }
@@ -73,7 +73,8 @@ body {
   left: 0;
   z-index: var(--z-fixed);
   margin-top: 0;
-  padding: 0.9em 0; }
+  padding-top: 0.5em;
+  padding-bottom: 0.5em; }
   .header__image {
     display: block;
     width: 4rem;
@@ -210,16 +211,16 @@ body {
   justify-content: center;
   align-items: center; }
   .card__title {
-    font-size: var(--h1-font-size);
+    font-size: calc(var(--h1-font-size) * 1.5);
     text-transform: uppercase;
     margin: 0;
     padding: 0; }
     @media screen and (min-width: 40em) {
       .card__title {
-        font-size: calc(var(--h1-font-size) * 1.5); } }
+        font-size: calc(var(--h1-font-size) * 2); } }
     @media screen and (min-width: 64em) {
       .card__title {
-        font-size: calc(var(--h1-font-size) * 2); } }
+        font-size: calc(var(--h1-font-size) * 2.5); } }
   .card__subtitle {
     font-size: var(--h4-font-size);
     margin: 0;
@@ -228,10 +229,10 @@ body {
     font-style: italic; }
     @media screen and (min-width: 40em) {
       .card__subtitle {
-        font-size: calc(var(--h2-font-size) * 1.5); } }
+        font-size: calc(var(--h4-font-size) * 1.2); } }
     @media screen and (min-width: 64em) {
       .card__subtitle {
-        font-size: calc(var(--h2-font-size) * 2); } }
+        font-size: calc(var(--h4-font-size) * 1.5); } }
   .card__description {
     width: 70%;
     text-align: center;

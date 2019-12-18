@@ -81,17 +81,17 @@
   align-items: center;
 
   &__title {
-    font-size: var(--h1-font-size);
+    font-size: calc(var(--h1-font-size) * 1.5);
     text-transform: uppercase;
     margin: 0;
     padding: 0;
 
     @include from(m) {
-      font-size: calc(var(--h1-font-size) * 1.5);
+      font-size: calc(var(--h1-font-size) * 2);
     }
 
     @include from(lg) {
-      font-size: calc(var(--h1-font-size) * 2);
+      font-size: calc(var(--h1-font-size) * 2.5);
     }
   }
 
@@ -103,11 +103,11 @@
     font-style: italic;
 
     @include from(m) {
-      font-size: calc(var(--h2-font-size) * 1.5);
+      font-size: calc(var(--h4-font-size) * 1.2);
     }
 
     @include from(lg) {
-      font-size: calc(var(--h2-font-size) * 2);
+      font-size: calc(var(--h4-font-size) * 1.5);
     }
   }
 
