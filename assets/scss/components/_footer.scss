@@ -1,0 +1,23 @@
+.brands {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1.5em 1.5em;
+
+  display: flex;
+  justify-content: space-evenly;
+
+  &__image {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    display: inline-block;
+    height: 1.5em;
+
+    @include from(m) {
+      height: 2.5em;
+    }
+
+    @include from(lg) {
+      height: 3em;
+    }
+  }
+}

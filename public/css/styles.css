@@ -272,3 +272,21 @@ body {
       padding: 0.7em 2.5em; } }
   .button:active {
     transform: scale(0.95); }
+
+.brands {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1.5em 1.5em;
+  display: flex;
+  justify-content: space-evenly; }
+  .brands__image {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    display: inline-block;
+    height: 1.5em; }
+    @media screen and (min-width: 40em) {
+      .brands__image {
+        height: 2.5em; } }
+    @media screen and (min-width: 64em) {
+      .brands__image {
+        height: 3em; } }
